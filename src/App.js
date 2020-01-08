@@ -68,6 +68,10 @@ class App extends React.Component {
         return (
             <div style={{paddingTop: "50px", color: "#FFFFFF"}}>
                 <Header as="h1" inverted style={{textAlign: "center", textShadow: "0 0 15px #b89aed"}}><Icon name="rocket" inverted /> Linear Systems Solver</Header>
+                <div style={{textAlign: "center"}}>
+                    <a href="https://github.com/yummypasta/linear-equation-solver" target="_blank"><Button secondary inverted circular labelPosition="left" icon="code" content="View source on GitHub" /></a>
+                    <a href="/" target="_blank"><Button secondary inverted circular labelPosition="left" icon="home" content="More useless programs" style={{marginLeft: "15px"}} /></a>
+                </div>
                 <div className="section">
                     <Header as="h2" inverted ><Icon name="expand" inverted /> Number of Variables</Header>
                     <Button circular size="large" icon="minus" negative disabled={this.state.vars <= 2} style={{display: "inline", marginRight: "10px"}} onClick={() => {
